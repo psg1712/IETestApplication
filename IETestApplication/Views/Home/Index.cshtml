@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Test";
+}
+
+<div id="bodyContainer" ng-app="IETestApp">
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="flip-container text-center col-md-12" ng-controller="IETestApp" >
+                    @*<input type="text" ng-model="a"/>
+                    <br />
+                    <input type="text" ng-model="b" />
+                    <br />
+                    <button ng-click="answer(a,b)"></button>
+                    <br />
+                    The answer is {{sum}}*@
+                    <br />
+                    <button class="btn btn-primary" ng-click="OpenCheckListModal()">Open Popup</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/Scripts/angular.js")
+    @Scripts.Render("~/spa/app.js")
+}

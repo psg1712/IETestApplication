@@ -1,0 +1,33 @@
+﻿<div class="modal-dialogTop">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="cancel()"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <!-- Modal Top Portion with Form Elements-->
+    <div class="modal-body">
+        <form name="formname">
+            <div id="checklist">
+                Please check the below options:
+                <br />
+                <br />
+                <div name="ChecklistOptions">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" ng-model="x.flag" ng-checked="x.flag" /> Test
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal Bottom Portion with Horizontal Tabs-->
+    <!-- Modal Footer -->
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="ok()">Save</button>
+        <!-- <button type="button" class="btn btn-default" ng-click="cancel()" ng-hide="isHidden">Cancel</button>-->
+
+    </div>
+</div>
